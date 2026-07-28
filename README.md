@@ -4,17 +4,17 @@ A PHP and MySQL website for a fictional zoological park. Visitors can browse ani
 
 ## Features
 
-- **Public pages** — home, about, animals directory, contact form, and site-wide search
-- **Member accounts** — registration and login (passwords hashed with `password_verify`)
-- **Admin dashboard** — add, update, and delete events, education content, and other site data
-- **MySQL-backed** — all content (animals, events, users) is stored in a database, with the schema included as a `.sql` dump
+- **Public pages** - home, about, animals directory, contact form, and site-wide search
+- **Member accounts** - registration and login (passwords hashed with `password_verify`)
+- **Admin dashboard** - add, update, and delete events, education content, and other site data
+- **MySQL-backed** - all content (animals, events, users) is stored in a database, with the schema included as a `.sql` dump
 
 ## Tech stack
 
 - PHP (procedural, `mysqli`)
 - MySQL
 - HTML / CSS / vanilla JavaScript
-- No frameworks — built from scratch for a web development module
+- No frameworks - built from scratch for a web development module
 
 ## Project structure
 
@@ -53,8 +53,8 @@ zooparc/
    ```
 4. Visit `http://localhost:8000/index.php` in your browser.
 
-> The default DB credentials are for local development only — if you ever deploy this somewhere public, use a real username/password and don't commit them.
+> The default DB credentials are for local development only - if you ever deploy this somewhere public, use a real username/password and don't commit them.
 
 ## License
 
-No license specified — feel free to treat this as a personal portfolio/reference project.
+No license specified - feel free to treat this as a personal portfolio/reference project.
