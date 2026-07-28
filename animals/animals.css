@@ -1,0 +1,178 @@
+/* Animal Section */
+.animal-section {
+    padding: 40px;
+    background: #fdf2e9;
+    text-align: center;
+}
+
+.animal-section h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    letter-spacing: 13px;
+    text-decoration: none;
+    margin-bottom: 1px;
+    margin-top: 70px;
+}
+
+.animal-section p {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+.animal-section p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6800;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+    margin-bottom: 30px;
+}
+
+.animal-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 380px;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-card img {
+    width: 100%;
+    height: 525px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block; 
+    margin-bottom: -40px;
+}
+
+.animal-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 6px 6px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    font-weight: bold;
+    text-align: center; 
+}
+
+.animal-card .btn {
+    margin-top: 77px; 
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid gray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.animal-card .btn:hover {
+    background-color: #FF6800;
+    color: white;
+}
+
+.animal-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.animal-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card .btn {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-top: 60px;
+    padding: 8px 16px;
+    background: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid gray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.animal-card .btn:hover {
+    background-color: #FF6800;
+    color: white;
+}
+.animal-info.hidden {
+    display: none;
+}
+
+.animal-info {
+    display: block;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    border-left: 5px solid #ff6800;
+    padding-left: 15px;
+    background: #f9fafb;
+}
+
+
+.animal-card.active .animal-info {
+    display: block;
+}
+
+.animal-info p {
+    font-family: Space Mono, monospace;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    text-transform: none;
+}
+.animal-info p:first-letter {
+    font-size: 1em;
+    color: #ff6800;
+    font-weight: bold;
+}
+.animal-card .animal-info {
+    display: none;
+}
+
+.animal-card.show-details .animal-info {
+    display: block; 
+    max-height: 400px; 
+    padding: 20px;
+}
+
+

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(elephantl.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 16%;
+}
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 45px 0 20px;
+    box-sizing: border-box;
+}
+.box input:focus {
+    border-color: rgba(255, 255, 255, 0.55);
+}
+.box input::placeholder {
+    color: #fff;
+}
+.box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+.container .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container .btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+.container .register, .container .login{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
+}
+.register p a, .login p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover, .login p a:hover {
+    text-decoration: underline;
+}
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .container {
+        width: 380px;
+        padding: 25px 35px;
+    }
+    .container h1 {
+        font-size: 32px;
+    }
+    .box input {
+        height: 45px;
+        padding: 0 40px 0 15px;
+    }
+    .container .btn {
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .container {
+        width: 340px;
+        padding: 20px 30px;
+    }
+    .container h1 {
+        font-size: 28px;
+    }
+    .box input {
+        height: 42px;
+        font-size: 15px;
+    }
+    .container .btn {
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+/* For screens 640px and below */
+@media (max-width: 640px) {
+    .container {
+        width: 300px;
+        padding: 20px 25px;
+    }
+    .container h1 {
+        font-size: 26px;
+    }
+    .box input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .container .btn {
+        height: 36px;
+        font-size: 13px;
+    }
+    .register p a, .login p a {
+        font-size: 13px;
+    }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Adjusted to fit smaller screens */
+        padding: 15px 10px;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .box input {
+        height: 38px;
+        font-size: 13px;
+    }
+    .container .btn {
+        height: 34px;
+        font-size: 12px;
+    }
+    .register p, .login p {
+        font-size: 12px;
+    }
+}
+
+

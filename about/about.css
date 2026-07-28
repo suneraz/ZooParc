@@ -1,0 +1,42 @@
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fafafa;
+}
+
+.about h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+}
+
+.about p::first-letter {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FF6800;
+}
+
+.about .btn {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: white;
+    font-weight: bold;
+    color: black;
+    border-radius: 1px;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+    border: 2px solid gray;
+}
